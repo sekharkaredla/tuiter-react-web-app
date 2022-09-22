@@ -80,9 +80,8 @@ body {
 }
 
 .wd-tuit-category-d-image {
-    float: left;
     border-radius: 50%;
-    width: 15px;
+    width: 10px;
 }
 
 .wd-tuit-category-d {
@@ -90,12 +89,26 @@ body {
     padding: 0px;
     font-size: 13px;
     color: white;
-    float: left;
 }
 
 .wd-tuit-image {
     border-radius: 20%;
     float: right;
+    margin-right: 16px;
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+.wd-tuit-category-d-collection {
+    float: left;
+    height: 100%;
+    width: 80%;
+}
+
+.wd-tuit-category-d-time {
     margin: 0px;
     padding: 0px;
+    font-size: 13px;
+    color: rgb(110, 118, 125);
 }
