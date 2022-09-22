@@ -6,6 +6,12 @@ body {
     padding-left: 16px;
 }
 
+.wd-search-navigation {
+    border: 1px solid rgb(110, 118, 125);
+    border-top: 0px;
+    padding: 0px;
+}
+
 .wd-search-twitter-input {
     width: 90%;
     background-color: darkgray;
@@ -27,12 +33,13 @@ body {
     clear: both;
 }
 
-.wd-foryou {
+.wd-navigation {
     width: 100%;
     font-size: 15px;
 }
 
-.wd-foryou li {
+
+.wd-navigation li {
     list-style-type: none;
     display: inline-block;
     color: rgb(110, 118, 125);
@@ -40,7 +47,7 @@ body {
     margin-right: 16px;
 }
 
-.wd-foryou .wd-foryou-selected {
+.wd-navigation .wd-navigation-selected {
     border-bottom: solid 4px rgb(29,161,242);
     color: rgb(29,161,242);
     text-underline-offset: 2px;
