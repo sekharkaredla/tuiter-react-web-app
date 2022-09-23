@@ -88,3 +88,8 @@
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
+
+.wd-bookmark-icons {
+    padding-top: 12px;
+    width: 100%;
+}
