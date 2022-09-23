@@ -507,6 +507,67 @@ p#id-selector-2 {
 }
 
 
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+    .media-exercise > .media-heading {
+        background-color: pink;
+        color: black;
+    }
+    .media-exercise > .media-para {
+        background-color: orange;
+        color: blue;
+    }
+}
+
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+    .media-exercise > .media-heading {
+        background-color: orange;
+        color: blue;
+    }
+    .media-exercise > .media-para {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+    .media-exercise > .media-heading {
+        background-color: black;
+        color: white;
+    }
+    .media-exercise > .media-para {
+        background-color: pink;
+        color: black;
+    }
+}
+
+
+
 
 
 
