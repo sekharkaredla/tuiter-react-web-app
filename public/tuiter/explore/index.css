@@ -1,17 +1,3 @@
-body {
-    background-color: black;
-    color: white;
-    border-color: rgb(47, 51, 54);
-    font-family: Arial;
-    padding-left: 16px;
-}
-
-.wd-search-navigation {
-    border: 1px solid rgb(110, 118, 125);
-    border-top: 0px;
-    padding: 0px;
-}
-
 .wd-search-twitter-input {
     width: 90%;
     background-color: darkgray;
@@ -27,10 +13,6 @@ body {
     margin-right: 12px;
     float: right;
     font-size: 25px;
-}
-
-.wd-float-done {
-    clear: both;
 }
 
 .wd-navigation {
@@ -57,7 +39,7 @@ body {
     border: none;
     margin-top: 0px;
     height: 12px;
-    background: gray;
+    background: rgb(47, 51, 54);
     margin-bottom: 0px;
 }
 
@@ -69,11 +51,6 @@ body {
     float: left;
 }
 
-.wd-tuit-options {
-    float: right;
-    color: rgb(110, 118, 125);
-}
-
 .wd-tuit-stats {
     margin: 0px;
     padding: 0px;
@@ -82,20 +59,13 @@ body {
 }
 
 .wd-tuit {
-    border: 1px solid rgb(110, 118, 125);
+    border: 1px solid rgb(47, 51, 54);
     padding: 15px;
 }
 
 .wd-tuit-category-d-image {
     border-radius: 50%;
     width: 10px;
-}
-
-.wd-tuit-category-d {
-    margin: 0px;
-    padding: 0px;
-    font-size: 13px;
-    color: white;
 }
 
 .wd-tuit-image {
@@ -117,5 +87,17 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-tuit-category-d {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    color: white;
+}
+
+.wd-tuit-options {
+    float: right;
     color: rgb(110, 118, 125);
 }

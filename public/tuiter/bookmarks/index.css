@@ -1,0 +1,62 @@
+.wd-title {
+    font-size: 20px;
+    padding-left: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.wd-title-and-user {
+    float: left;
+    padding-bottom: 12px;
+}
+
+.wd-user-handle {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    padding-left: 16px;
+}
+
+.wd-bookmark-options {
+    padding-right: 16px;
+    float: right;
+    color: rgb(110, 118, 125);
+}
+
+.wd-image-avatar-div {
+    float: left;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 12px;
+}
+
+.wd-bookmark-main-content {
+    float: left;
+    padding-top: 12px;
+    padding-right: 16px;
+    width: 90%;
+    max-width: 506px;
+}
+
+.wd-avatar-image {
+    border-radius: 50%;
+    width: 48px;
+}
+
+.wd-bookmark-author-id {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-author {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    color: white;
+}
+
+.wd-bookmark-main-data {
+    font-size: 15px;
+    padding-bottom: 12px;
+}
