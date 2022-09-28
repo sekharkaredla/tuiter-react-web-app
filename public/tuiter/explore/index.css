@@ -1,10 +1,11 @@
 .wd-search-twitter-input {
     width: 90%;
-    background-color: darkgray;
+    background-color: rgb(47, 51, 54);
     color: white;
     border-radius: 10px;
     height: 25px;
     margin-left: 16px;
+    margin-top: 7px;
     float: left;
 }
 
