@@ -10,10 +10,11 @@
 }
 
 .wd-gear-icon {
+    margin-top: 3px;
     text-decoration-line: none;
     margin-right: 12px;
     float: right;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .wd-navigation {
