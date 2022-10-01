@@ -5,95 +5,211 @@
     <title>Explore</title>
     <link href="../styles.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
 
-    <div class="wd-top-entities-border">
-        <input type="text" class="wd-search-twitter-input"
-               id="text-field-search" placeholder="&#128269; Search Twitter"/>
-        <a href="explore-settings.html" class="wd-gear-icon">&#9881;</a>
+<div class="container pt-2">
+    <div class="row">
+        <div class="col-2">
+            <div class="list-group">
+                <a href="https://en.wikipedia.org/wiki/Dune_(novel)"
+                   class="list-group-item list-group-item-action">
+                    Dune</a>
+                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                   class="list-group-item list-group-item-action">
+                    Lord of the Rings</a>
+                <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+                    The Forever War</a>
+                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+                   class="list-group-item list-group-item-action">
+                    2001 A Space Odyssey</a>
+                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                   class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ender's
+                    Game</a>
+            </div>
 
-        <div class="wd-float-done"></div>
+            <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-10">
+                    <div class="position-relative">
+                        <input class="form-control" placeholder="Search Tuiter"/>
+                    </div>
+                </div>
+                <div class="col-2">
+                    COG
+                </div>
+            </div>
 
-        <ul class="wd-navigation">
-            <li class="wd-navigation-selected">For you</li>
-            <li>Trending</li>
-            <li>COVID-19</li>
-            <li>News</li>
-            <li>Sports</li>
-        </ul>
+            <ul class="nav nav-tabs mt-2 mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1">Disabled</a>
+                </li>
+            </ul>
+            <div class="position-relative">
+                <img src="../../images/starship.png" width="100%"/>
+                <h2 class="position-absolute bottom-0 start-0 text-white">SpaceX's Starship</h2>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                ReactJS - 2h
+                            </div>
+                            <div class="fw-bolder">
+                                React.js is a Single Page Application Framework
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img src="../../images/cnn.png" class="float-end" height="80px"/>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">Left</div>
+                        <div class="col">Right</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">Left</div>
+                        <div class="col">Right</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">Left</div>
+                        <div class="col">Right</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">Left</div>
+                        <div class="col">Right</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4">
+            Follow
+        </div>
     </div>
+</div>
 
-    <hr class="wd-hr-divide-large"/>
 
-    <div class="wd-tuit">
-        <div class="wd-float-done">
+
+
+
+
+
+
+
+
+
+
+
+<div class="wd-top-entities-border">
+    <input type="text" class="wd-search-twitter-input"
+           id="text-field-search" placeholder="&#128269; Search Twitter"/>
+    <a href="explore-settings.html" class="wd-gear-icon">&#9881;</a>
+
+    <div class="wd-float-done"></div>
+
+    <ul class="wd-navigation">
+        <li class="wd-navigation-selected">For you</li>
+        <li>Trending</li>
+        <li>COVID-19</li>
+        <li>News</li>
+        <li>Sports</li>
+    </ul>
+</div>
+
+<hr class="wd-hr-divide-large"/>
+
+<div class="wd-tuit">
+    <div class="wd-float-done">
         <span class="wd-tuit-category-c">Trending in Science</span>
         <span class="wd-tuit-options">&#8230;</span>
-        </div>
-        <br/>
-        <span class="wd-tuit-title">Starship</span>
-        <br/>
-        <span class="wd-tuit-stats">55.5K Tuits</span>
     </div>
+    <br/>
+    <span class="wd-tuit-title">Starship</span>
+    <br/>
+    <span class="wd-tuit-stats">55.5K Tuits</span>
+</div>
 
-    <div class="wd-tuit">
-        <div class="wd-float-done">
+<div class="wd-tuit">
+    <div class="wd-float-done">
         <span class="wd-tuit-category-c">Sports . Trending</span>
         <span class="wd-tuit-options">&#8230;</span>
-        </div>
+    </div>
+    <br/>
+    <span class="wd-tuit-title">Joe Rogan</span>
+    <br/>
+    <span class="wd-tuit-stats">5,218 Tuits</span>
+</div>
+
+<div class="wd-tuit">
+    <div class="wd-tuit-category-d-collection">
+        <img src="../../images/times.png" class="wd-tuit-category-d-image"/>
+        <span class="wd-tuit-category-d">The New York Times &#10003;</span>
+        <span class="wd-tuit-category-d-time">  . Yesterday</span>
         <br/>
-        <span class="wd-tuit-title">Joe Rogan</span>
+        <span class="wd-tuit-title">The CNN conundrum. Pellentesque gravida mollis metus iaculis sagittis. Mauris blandit ut lacus nec euismod. Donec semper at dolor sit amet hendrerit. Nulla facilisi. Nunc in vestibulum turpis, ut elementum sem.</span>
+    </div>
+    <img src="../../images/cnn.png" class="wd-tuit-image"/>
+    <div class="wd-float-done"></div>
+</div>
+
+<div class="wd-tuit">
+    <div class="wd-tuit-category-d-collection">
+        <img src="../../images/bloomberg.png" class="wd-tuit-category-d-image"/>
+        <span class="wd-tuit-category-d">Bloomberg &#10003;</span>
+        <span class="wd-tuit-category-d-time">  . Yesterday</span>
         <br/>
-        <span class="wd-tuit-stats">5,218 Tuits</span>
+        <span class="wd-tuit-title">Covid-19 Economy Update. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available.</span>
     </div>
-
-    <div class="wd-tuit">
-            <div class="wd-tuit-category-d-collection">
-                <img src="times.png" class="wd-tuit-category-d-image"/>
-                <span class="wd-tuit-category-d">The New York Times &#10003;</span>
-                <span class="wd-tuit-category-d-time">  . Yesterday</span>
-                <br/>
-                <span class="wd-tuit-title">The CNN conundrum. Pellentesque gravida mollis metus iaculis sagittis. Mauris blandit ut lacus nec euismod. Donec semper at dolor sit amet hendrerit. Nulla facilisi. Nunc in vestibulum turpis, ut elementum sem.</span>
-            </div>
-        <img src="cnn.png" class="wd-tuit-image"/>
-        <div class="wd-float-done"></div>
+    <div>
+        <img src="../../images/covid.png" class="wd-tuit-image"/>
     </div>
+    <div class="wd-float-done"></div>
+</div>
 
-    <div class="wd-tuit">
-        <div class="wd-tuit-category-d-collection">
-            <img src="bloomberg.png" class="wd-tuit-category-d-image"/>
-            <span class="wd-tuit-category-d">Bloomberg &#10003;</span>
-            <span class="wd-tuit-category-d-time">  . Yesterday</span>
-            <br/>
-            <span class="wd-tuit-title">Covid-19 Economy Update. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available.</span>
-        </div>
-        <div>
-        <img src="covid.png" class="wd-tuit-image"/>
-        </div>
-        <div class="wd-float-done"></div>
+<div class="wd-tuit">
+    <div class="wd-tuit-category-d-collection">
+        <span class="wd-tuit-category-d-time">Soccer . LIVE</span>
+        <br/>
+        <span class="wd-tuit-title">Messi plays well. The former attacker glimpsed back at some of his best moments at Barça and backed the club to succeed, especially in the backdrop of an excellent summer transfer window and an equally brilliant coach.</span>
     </div>
+    <img src="../../images/barcelona.png" class="wd-tuit-image"/>
+    <div class="wd-float-done"></div>
+</div>
 
-    <div class="wd-tuit">
-        <div class="wd-tuit-category-d-collection">
-            <span class="wd-tuit-category-d-time">Soccer . LIVE</span>
-            <br/>
-            <span class="wd-tuit-title">Messi plays well. The former attacker glimpsed back at some of his best moments at Barça and backed the club to succeed, especially in the backdrop of an excellent summer transfer window and an equally brilliant coach.</span>
-        </div>
-        <img src="barcelona.png" class="wd-tuit-image"/>
-        <div class="wd-float-done"></div>
+<div class="wd-tuit">
+    <div class="wd-tuit-category-d-collection">
+        <span class="wd-tuit-category-d-time">Elon Musk . LIVE</span>
+        <br/>
+        <span class="wd-tuit-title">Elon Musk is a genius. It is not just the name that gets you the fame. It is the contribution to society that you put in, It is the work and result that you bring forth. And that is what Elon Musk is doing.</span>
     </div>
-
-    <div class="wd-tuit">
-        <div class="wd-tuit-category-d-collection">
-            <span class="wd-tuit-category-d-time">Elon Musk . LIVE</span>
-            <br/>
-            <span class="wd-tuit-title">Elon Musk is a genius. It is not just the name that gets you the fame. It is the contribution to society that you put in, It is the work and result that you bring forth. And that is what Elon Musk is doing.</span>
-        </div>
-        <img src="tesla.png" class="wd-tuit-image"/>
-        <div class="wd-float-done"></div>
-    </div>
-
+    <img src="../../images/tesla.png" class="wd-tuit-image"/>
+    <div class="wd-float-done"></div>
+</div>
 
 
 </body>
