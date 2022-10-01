@@ -8,96 +8,128 @@
     <link href="../../vendor/fontawesome/css/all.css" rel="stylesheet"/>
     <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="bg-black">
 
 <div class="container pt-2">
     <div class="row">
 
         <div class="d-none d-sm-block col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2">
             <div class="list-group">
-                <a href="" class="list-group-item list-group-item-action d-inline-flex">
-                    <i class="fa-brands fa-square-twitter pt-1"></i></a>
+                <a href="" class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
+                    <i class="fab fa-twitter pt-1"></i></a>
                 <a href="../home.html"
-                   class="list-group-item list-group-item-action d-inline-flex">
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
                     <i class="fa-solid fa-house pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;Home</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action d-inline-flex">
-                    <i class="fa-solid fa-hashtag pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;Explore</span></a>
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
+                    <i class="fa-solid fa-hashtag pt-1"></i><span
+                        class="d-none d-xl-block">&nbsp;&nbsp;Explore</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action d-inline-flex">
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
                     <i class="fa-solid fa-bell pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;Notification</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action d-inline-flex">
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
                     <i class="fa-solid fa-message pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;Messages</span></a>
                 <a href="../bookmarks/index.html"
-                   class="list-group-item list-group-item-action d-inline-flex">
-                    <i class="fa-solid fa-bookmark pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;Bookmarks</span></a>
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
+                    <i class="fa-solid fa-bookmark pt-1"></i><span
+                        class="d-none d-xl-block">&nbsp;&nbsp;Bookmarks</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action d-inline-flex">
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
                     <i class="fa-solid fa-list pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;Lists</span></a>
                 <a href="../profile.html"
-                   class="list-group-item list-group-item-action d-inline-flex">
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
                     <i class="fa-solid fa-user pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;Profile</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action d-inline-flex">
+                   class="list-group-item list-group-item-action d-inline-flex bg-black text-white">
                     <i class="fa-solid fa-ellipsis pt-1"></i><span class="d-none d-xl-block">&nbsp;&nbsp;More</span></a>
             </div>
             <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
         </div>
 
         <div class="col-12 col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
-            <div class="row">
-                <div class="col-11">
-                    <div class="position-relative">
-                        <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter"/>
-                        <i class="fa-sharp fa-solid fa-magnifying-glass position-absolute wd-magnifying-glass"></i>
+            <div class="border border-end border-start border-dark border-3 border-top-0">
+                <div class="row">
+                    <div class="col-10 ms-3">
+                        <div class="position-relative">
+                            <input class="ps-5 form-control rounded-pill bg-dark text-white border border-dark"
+                                   placeholder="Search Tuiter"/>
+                            <i class="fa-sharp fa-solid fa-magnifying-glass position-absolute wd-magnifying-glass text-black"></i>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <i class="fa-solid fa-gear text-primary fs-5 text-white pt-2"></i>
                     </div>
                 </div>
-                <div class="col-1">
-                    <i class="fa-solid fa-gear text-primary fs-2"></i>
+
+                <ul class="nav nav-tabs mt-2 border-top-0 border-bottom-0">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link disabled" href="for-you.html">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="covid19.html">COVID-19</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link text-white" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="position-relative border-bottom border-start border-end border-3 border-dark">
+                <img src="../../images/galaxy.png" width="100%"/>
+                <div class="position-absolute bottom-0 start-0 ps-2 text-white w-100 pe-5">
+                    <div class="text-white small">
+                        Music . Last Night
+                    </div>
+                    <div class="text-white fw-bolder fs-3 w-100">
+                        BTS and Coldplay release their new song, My Universe <i class="fa-solid fa-earth-asia"></i>
+                    </div>
                 </div>
             </div>
 
-            <ul class="nav nav-tabs mt-2 mb-2">
-                <li class="nav-item">
-                    <a class="nav-link active" href="for-you.html">For You</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="trending.html">Trending</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sports.html">Sports</a>
-                </li>
-                <li class="nav-item d-none d-md-block">
-                    <a class="nav-link" href="entertainment.html">Entertainment</a>
-                </li>
-            </ul>
-
-            <div class="position-relative">
-                <img src="../../images/starship.png" width="100%"/>
-                <h2 class="position-absolute bottom-0 start-0 ps-2 text-white">SpaceX's Starship</h2>
-            </div>
-
-            <ul class="list-group">
-                <li class="list-group-item">
+            <ul class="list-group border border-start border-end border-dark border-3 border-top-0">
+                <li class="list-group-item bg-black">
                     <div class="row">
-                        <div class="col-9 col-xxl-10">
-                            <div class="text-secondary">
-                                Web Development
+                        <div class="col-10">
+                            <div class="text-secondary small">
+                                Trending in R&B & soul
                             </div>
-                            <div class="fw-bolder">
-                                ReactJS <i class="fa-solid fa-circle-check"></i><span class="text-secondary"> - 2h</span>
+                            <div class="fw-bolder text-white">
+                                R Kelly
                             </div>
-                            <div class="fw-bolder">
-                                React.js is a component based front end library that makes it very easy to build Single
-                                Page Applications or SPAs
+                            <div class="text-secondary small">
+                                18.2K Tuits
                             </div>
                         </div>
-                        <div class="col-3 col-xxl-2 align-self-center">
-                            <img src="../../images/react.png" class="float-end rounded-2" height="80px"/>
+                        <div class="col-2 align-self-center text-secondary">
+                            <i class="fa-solid fa-ellipsis float-end"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item bg-black">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="text-secondary small">
+                                Trending in R&B & soul
+                            </div>
+                            <div class="fw-bolder text-white">
+                                Chloe
+                            </div>
+                            <div class="text-secondary small">
+                                Trending with <a class="text-primary text-decoration-none">Halle</a>
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center text-secondary">
+                            <i class="fa-solid fa-ellipsis float-end"></i>
                         </div>
                     </div>
                 </li>
@@ -105,7 +137,8 @@
                     <div class="row">
                         <div class="col-9 col-xxl-10">
                             <div class="fw-bolder">
-                                JavaScript <i class="fa-solid fa-circle-check"></i><span class="text-secondary"> - 2h</span>
+                                JavaScript <i class="fa-solid fa-circle-check"></i><span
+                                    class="text-secondary"> - 2h</span>
                             </div>
                             <div class="fw-bolder">
                                 JavaScript is programming language that can run on browsers as well as desktops
