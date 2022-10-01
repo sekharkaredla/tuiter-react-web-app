@@ -102,3 +102,8 @@
     float: right;
     color: rgb(110, 118, 125);
 }
+
+.wd-magnifying-glass {
+    bottom: 10px;
+    left: 10px;
+}
