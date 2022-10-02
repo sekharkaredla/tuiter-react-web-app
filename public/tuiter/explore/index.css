@@ -17,6 +17,10 @@
     font-size: 30px;
 }
 
+.wd-section-link {
+    text-decoration: none;
+}
+
 .wd-navigation {
     width: 100%;
     font-size: 15px;
