@@ -122,3 +122,8 @@
 .wd-top-entities-border {
     border-top-width: 0px;
 }
+
+.wd-top-entities-border-title {
+    border: 1px solid rgb(47, 51, 54);
+    padding: 0px;
+}
