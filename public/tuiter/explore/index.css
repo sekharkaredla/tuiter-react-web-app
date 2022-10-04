@@ -2,3 +2,8 @@
     bottom: 10px;
     left: 10px;
 }
+
+.wd-navigation-selected {
+    border-bottom: solid 4px rgb(29,161,242);
+    text-underline-offset: 2px;
+}
