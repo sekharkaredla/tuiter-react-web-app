@@ -7,3 +7,13 @@
     border-bottom: solid 4px rgb(29,161,242);
     text-underline-offset: 2px;
 }
+
+.wd-list-top-rounded {
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+}
+
+.wd-list-bottom-rounded {
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
