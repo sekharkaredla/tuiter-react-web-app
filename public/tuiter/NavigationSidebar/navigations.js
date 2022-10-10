@@ -12,7 +12,7 @@ export default [
     {
         icon: "fa-solid fa-hashtag",
         name: "Explore",
-        link: "../explore/index.html",
+        link: "../ExploreScreen/index.html",
     },
     {
         icon: "fa-solid fa-bell",
