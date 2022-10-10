@@ -1,6 +1,6 @@
 const NavigationItem = (navigation, active) => {
     let styling = "list-group-item list-group-item-action d-inline-flex";
-    if (navigation.name.toLowerCase().includes(active)) {
+    if (navigation.name.toLowerCase().includes(active.toLowerCase())) {
         styling = styling.concat(" bg-primary")
     }
     return (`
