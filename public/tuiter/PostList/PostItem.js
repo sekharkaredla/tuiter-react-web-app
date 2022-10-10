@@ -1,4 +1,11 @@
 const PostItem = (post) => {
+    let imageDivStyle = "rounded-top border border-1 border-secondary ps-0 pe-0 wd-list-top-rounded";
+    let imageStyle = "wd-list-top-rounded";
+    if (!post.extra) {
+        imageDivStyle = imageDivStyle.concat(" wd-list-bottom-rounded");
+        imageStyle = imageStyle.concat(" wd-list-bottom-rounded");
+    }
+
     const mainContent = `<div class="row">
         <div class="col-1 ms-3">
             <img src="${post.profileImage}" class="rounded-circle float-end" height="50px"/>
@@ -15,8 +22,8 @@ const PostItem = (post) => {
                 <div class="text-white">${post.title}</div>
             </div>
             <div class="row mt-2 ps-2">
-                <div class="rounded-top border border-1 border-secondary ps-0 pe-0">
-                    <img src="${post.image}" width="100%"/>
+                <div class="${imageDivStyle}">
+                    <img src="${post.image}" width="100%" class="${imageStyle}"/>
                 </div>
             </div>`;
 
