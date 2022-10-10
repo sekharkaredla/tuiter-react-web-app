@@ -31,7 +31,7 @@ const PostItem = (post) => {
     if (post.extra) {
         extraContent = `
             <div class="row ps-2">
-                <div class="border border-secondary border-1 border-bottom border-top-0 rounded-bottom">
+                <div class="border border-secondary border-1 border-bottom border-top-0 rounded-bottom wd-list-bottom-rounded">
                     <div class="row mt-2">
                         <div class="text-white">
                             ${post.extra.title}
