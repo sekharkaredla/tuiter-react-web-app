@@ -15,7 +15,7 @@ const PostItem = (post) => {
                 <div class="text-white">${post.title}</div>
             </div>
             <div class="row mt-2 ps-2">
-                <div class="rounded-top border border-2 border-secondary ps-0 pe-0">
+                <div class="rounded-top border border-1 border-secondary ps-0 pe-0">
                     <img src="${post.image}" width="100%"/>
                 </div>
             </div>`;
@@ -24,7 +24,7 @@ const PostItem = (post) => {
     if (post.extra) {
         extraContent = `
             <div class="row ps-2">
-                <div class="border border-secondary border-2 border-bottom border-top-0 rounded-bottom">
+                <div class="border border-secondary border-1 border-bottom border-top-0 rounded-bottom">
                     <div class="row mt-2">
                         <div class="text-white">
                             ${post.extra.title}
