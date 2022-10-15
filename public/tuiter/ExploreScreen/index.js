@@ -19,7 +19,7 @@ const ExploreComponent = () => {
                 </div>
             </div>
             <div class="col-1">
-                <i class="fa-solid fa-gear text-primary fs-4"></i>
+                <a href="#" class="text-decoration-none"><i class="fa-solid fa-gear text-primary fs-4"></i></a>
             </div>
         </div>
 
