@@ -1,5 +1,4 @@
-const PostSummaryItem = (post) => {
-    return (`
+const PostSummaryItem = (post) => `
     <li class="list-group-item">
         <div class="row">
             <div class="col-9 col-xxl-10">
@@ -17,8 +16,6 @@ const PostSummaryItem = (post) => {
                 <img src="${post.image}" class="float-end rounded-2" height="80px"/>
             </div>
         </div>
-    </li>
-    `);
-}
+    </li>`
 
 export default PostSummaryItem;

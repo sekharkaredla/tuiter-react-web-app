@@ -1,12 +1,9 @@
 import posts from "./posts.js";
 import PostSummaryItem from "./PostSummaryItem.js";
 
-const PostSummaryList = () => {
-    return (`
+const PostSummaryList = () => `
         <ul class="list-group">
             ${posts.map(post => PostSummaryItem(post)).join('')}
-        </ul>
-    `);
-}
+        </ul>`
 
 export default PostSummaryList;
