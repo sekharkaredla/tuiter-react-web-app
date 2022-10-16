@@ -14,7 +14,7 @@ const ExploreComponent = () => {
                 </div>
                 <div className="col-1">
                     <a href="#" className="text-decoration-none"><i
-                        className="fa-solid fa-gear text-primary fs-4"></i></a>
+                        className="wd-bottom-4 text-primary float-end bi bi-gear-fill fs-2 position-relative"></i></a>
                 </div>
             </div>
 
