@@ -3,33 +3,42 @@ import PostSummaryList from "../post-summary-list";
 import "./index.css";
 
 const ExploreComponent = () => {
-    return(
+    return (
         <>
             <div className="row">
-                <div className="col-11 position-relative">
-                    <input placeholder="Search Tuiter"
-                           className="form-control rounded-pill ps-5"/>
-                    <i className="bi bi-search position-absolute wd-nudge-up"></i>
+                <div className="col-11">
+                    <div className="position-relative">
+                        <input className="ps-5 form-control rounded-pill" placeholder="Search Tuiter"/>
+                        <i className="fa-sharp fa-solid fa-magnifying-glass position-absolute wd-magnifying-glass"></i>
+                    </div>
                 </div>
                 <div className="col-1">
-                    <i className="wd-bottom-4 text-primary float-end bi bi-gear-fill fs-2 position-relative"></i>
+                    <a href="#" className="text-decoration-none"><i
+                        className="fa-solid fa-gear text-primary fs-4"></i></a>
                 </div>
             </div>
-            <ul className="nav nav-pills mb-2">
+
+            <ul className="nav nav-tabs mt-2 mb-2">
                 <li className="nav-item">
-                    <a className="nav-link active">For You</a>
+                    <a className="nav-link active" href="for-you.html">For You</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">Trending</a>
+                    <a className="nav-link" href="trending.html">Trending</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">News</a>
+                    <a className="nav-link" href="news.html">News</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li className="nav-item d-none d-md-block">
+                    <a className="nav-link" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
-            <div className="position-relative mb-2">
-                <img src="/images/starship.png" className="w-100"/>
-                <h1 className="position-absolute wd-nudge-up text-white">
-                    SpaceX Starship</h1>
+
+            <div className="position-relative">
+                <img src="../../images/starship.png" width="100%"/>
+                <h2 className="position-absolute bottom-0 start-0 ps-2 text-white">SpaceX's Starship</h2>
             </div>
             <PostSummaryList/>
         </>
