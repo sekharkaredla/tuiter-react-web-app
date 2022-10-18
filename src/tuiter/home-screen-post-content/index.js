@@ -10,7 +10,9 @@ const HomeScreenPostContentComponent = ({post, imageDivStyle, imageStyle}) =>
                     <i className="fa-solid fa-ellipsis float-end pt-2"></i>
                 </a>
             </div>
-            <div className="text-white">{`${post.title}`}</div>
+            <div className="text-white">{post.title} &nbsp;&nbsp;
+                <a href={`${post.titleLink}`} className="text-primary text-decoration-none">{post.titleLinkContent}</a>
+            </div>
         </div>
         <div className="row mt-2 ps-2">
             <div className={`${imageDivStyle}`}>
