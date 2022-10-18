@@ -7,39 +7,41 @@ const NavigationSidebar = (
 ) => {
     return (
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
-            <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
-                Home
+            <a className="list-group-item list-group-item-action d-inline-flex">
+                <i className="fa-solid fa-t pt-1"></i></a>
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'home' ? 'active' : ''}`}>
+                <i className="fa-solid fa-house pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;Home</span>
             </a>
-            <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
-                Explore
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'explore' ? 'active' : ''}`}>
+                <i className="fa-solid fa-hashtag pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;Explore</span>
             </a>
-            <a className={`list-group-item
-                    ${active === 'notifications'?'active':''}`}>
-                Notifications
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'notifications' ? 'active' : ''}`}>
+                <i className="fa-solid fa-bell pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;Notifications</span>
             </a>
-            <a className={`list-group-item
-                    ${active === 'messages'?'active':''}`}>
-                Messages
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'messages' ? 'active' : ''}`}>
+                <i className="fa-solid fa-message pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;Messages</span>
             </a>
-            <a className={`list-group-item
-                    ${active === 'bookmarks'?'active':''}`}>
-                Bookmarks
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'bookmarks' ? 'active' : ''}`}>
+                <i className="fa-solid fa-bookmark pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;Bookmarks</span>
             </a>
-            <a className={`list-group-item
-                    ${active === 'lists'?'active':''}`}>
-                Lists
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'lists' ? 'active' : ''}`}>
+                <i className="fa-solid fa-list pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;Lists</span>
             </a>
-            <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
-                Profile
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'user' ? 'active' : ''}`}>
+                <i className="fa-solid fa-user pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;User</span>
             </a>
-            <a className={`list-group-item
-                    ${active === 'more'?'active':''}`}>
-                More
+            <a href="#" className={`list-group-item list-group-item-action d-inline-flex ${active === 'more' ? 'active' : ''}`}>
+                <i className="fa-solid fa-ellipsis pt-1"></i>
+                <span className="d-none d-xl-block">&nbsp;&nbsp;More</span>
             </a>
+            <button className="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
         </div>
     );
 };
