@@ -4,7 +4,6 @@ import HomeScreenPostExtraContentComponent from "../home-screen-post-extra-conte
 import HomeIconsComponent from "../home-icons";
 
 const HomeScreenPostComponent = (eachPost) => {
-    console.log(eachPost)
     let imageDivStyle = "rounded-top border border-1 border-secondary ps-0 pe-0 wd-list-top-rounded";
     let imageStyle = "wd-list-top-rounded";
     if (!eachPost.extra) {
