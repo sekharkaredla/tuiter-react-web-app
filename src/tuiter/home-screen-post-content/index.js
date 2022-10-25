@@ -7,7 +7,7 @@ const HomeScreenPostContentComponent = ({post}) =>
                 {post.userName} <i className="fa-solid fa-circle-check"></i>
                 <span className="text-secondary">&nbsp;&nbsp;{post.handle} . {post.time}</span>
                 <a href="#" className="text-decoration-none text-secondary">
-                    <i className="fa-solid fa-ellipsis float-end pt-2"></i>
+                    <i className="fa-solid fa-ellipsis float-end pt-2 pb-1"></i>
                 </a>
             </div>
             <div className="text-white">{post.title} &nbsp;&nbsp;
