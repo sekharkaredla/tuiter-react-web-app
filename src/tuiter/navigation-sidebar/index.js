@@ -6,13 +6,14 @@ const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
     const active = paths[2];
+    const defaultPage = paths.length < 3;
     return (
         <div className="list-group">
             <a className="list-group-item list-group-item-action d-inline-flex">
                 <i className="fa-solid fa-t pt-1"></i></a>
             <Link to="/tuiter/home" className="text-decoration-none">
                 <a
-                    className={`list-group-item list-group-item-action d-inline-flex ${active === 'home' ? 'active' : ''}`}>
+                    className={`list-group-item list-group-item-action d-inline-flex ${defaultPage || active === 'home' || active === '' ? 'active' : ''}`}>
                     <i className="fa-solid fa-house pt-1"></i>
                     <span className="d-none d-xl-block">&nbsp;&nbsp;Home</span>
                 </a>
