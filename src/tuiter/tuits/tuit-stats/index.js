@@ -1,21 +1,21 @@
 import React from "react";
 
-const TuitStats = (eachPost) =>
+const TuitStats = ({post}) =>
     <>
         <div className="row">
             <div className="col-3 pt-2">
                 <a href="src/tuiter/tuits/tuit-stats/index#" className="text-decoration-none text-secondary">
-                    <i className="fa-solid fa-comment"></i> {eachPost.comments}
+                    <i className="fa-solid fa-comment"></i> {post.comments}
                 </a>
             </div>
             <div className="col-3 pt-2">
                 <a href="src/tuiter/tuits/tuit-stats/index#" className="text-decoration-none text-secondary">
-                    <i className="fa fa-retweet" aria-hidden="true"></i> {eachPost.retweets}
+                    <i className="fa fa-retweet" aria-hidden="true"></i> {post.retweets}
                 </a>
             </div>
             <div className="col-3 pt-2">
                 <a href="src/tuiter/tuits/tuit-stats/index#" className="text-decoration-none text-secondary">
-                    <i className="fa-solid fa-heart"></i> {eachPost.likes}
+                    <i className="fa-solid fa-heart"></i> {post.likes}
                 </a>
             </div>
             <div className="col-3 pt-2">

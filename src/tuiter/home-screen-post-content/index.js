@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeScreenPostContentComponent = ({post, imageDivStyle, imageStyle}) =>
+const HomeScreenPostContentComponent = ({post}) =>
     <>
         <div className="row">
             <div className="fw-bolder text-white float-start line">
@@ -12,11 +12,6 @@ const HomeScreenPostContentComponent = ({post, imageDivStyle, imageStyle}) =>
             </div>
             <div className="text-white">{post.title} &nbsp;&nbsp;
                 <a href={`${post.titleLink}`} className="text-primary text-decoration-none">{post.titleLinkContent}</a>
-            </div>
-        </div>
-        <div className="row mt-2 ps-2">
-            <div className={`${imageDivStyle}`}>
-                <img src={`${post.image}`} width="100%" className={`${imageStyle}`}/>
             </div>
         </div>
     </>
