@@ -2,10 +2,17 @@
   {
     "_id": 1,
     "topic": "Web Development",
-    "userName": "ReactJS",
     "time": "2h",
     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-    "image": "react.png"
+    "image": "react.png",
+    "userName": "Elon Musk",
+    "handle": "elonmusk",
+    "titleLink": "#",
+    "titleLinkContent": "@Inspiration4x",
+    "profileImage": "/images/elon_musk.png",
+    "comments": "4.2K",
+    "retweets": "3.5K",
+    "likes": "37.5K"
   },
   {
     "_id": 2,
@@ -14,24 +21,13 @@
     "time": "1 day",
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "image": "js.png",
-    "tweets": "123K"
-  },
-  {
-    "_id": 3,
-    "topic": "Web Development",
-    "userName": "",
-    "title": "jQuery",
-    "time": "last week",
-    "image": "jquery.png",
-    "tweets": "122K"
-  },
-  {
-    "_id": 4,
-    "topic": "Web Development",
-    "userName": "NodeJS",
-    "title": "",
-    "time": "last month",
-    "image": "node.png",
-    "tweets": "120K"
+    "tweets": "123K",
+    "handle": "nypost",
+    "titleLink": "#",
+    "titleLinkContent": "trib.al/nx2Gfaq",
+    "profileImage": "/images/ny_post.png",
+    "comments": "965",
+    "retweets": "2.4K",
+    "likes": "4K"
   }
 ]

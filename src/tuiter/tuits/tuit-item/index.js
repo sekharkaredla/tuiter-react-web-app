@@ -1,15 +1,10 @@
 import React from "react";
-import HomeScreenPostContentComponent from "../home-screen-post-content";
-import HomeScreenPostExtraContentComponent from "../home-screen-post-extra-content";
-import HomeIconsComponent from "../home-icons";
+import HomeScreenPostContentComponent from "../../home-screen-post-content";
+import TuitStats from "../tuit-stats";
 
-const HomeScreenPostComponent = (eachPost) => {
+const TuitItem = (eachPost) => {
     let imageDivStyle = "rounded-top border border-1 border-secondary ps-0 pe-0 wd-list-top-rounded";
     let imageStyle = "wd-list-top-rounded";
-    if (!eachPost.extra) {
-        imageDivStyle = imageDivStyle.concat(" wd-list-bottom-rounded");
-        imageStyle = imageStyle.concat(" wd-list-bottom-rounded");
-    }
 
     const props = {"post": eachPost, "imageDivStyle": imageDivStyle, "imageStyle": imageStyle}
 
@@ -21,8 +16,7 @@ const HomeScreenPostComponent = (eachPost) => {
                 </div>
                 <div className="col-10">
                     <HomeScreenPostContentComponent {...props}/>
-                    {eachPost.extra ? <HomeScreenPostExtraContentComponent {...eachPost}/> : ""}
-                    <HomeIconsComponent {...eachPost}/>
+                    <TuitStats {...eachPost}/>
                 </div>
             </div>
             <hr/>
@@ -30,4 +24,4 @@ const HomeScreenPostComponent = (eachPost) => {
     );
 }
 
-export default HomeScreenPostComponent;
+export default TuitItem;
