@@ -27,7 +27,7 @@ const NavigationSidebar = () => {
             </Link>
             <Link to="/tuiter/profile" className="text-decoration-none">
                 <a
-                    className={`list-group-item list-group-item-action d-inline-flex ${active === 'profile' ? 'active' : ''}`}>
+                    className={`list-group-item list-group-item-action d-inline-flex ${active === 'profile' || active === 'edit-profile' ? 'active' : ''}`}>
                     <i className="fa-solid fa-user pt-1"></i>
                     <span className="d-none d-xl-block">&nbsp;&nbsp;Profile</span>
                 </a>
