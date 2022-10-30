@@ -5,12 +5,12 @@ const TuitStats = ({post}) =>
         <div className="row">
             <div className="col-3 pt-2">
                 <a href="src/tuiter/tuits/tuit-stats/index#" className="text-decoration-none text-secondary">
-                    <i className="fa-solid fa-comment"></i> {post.comments}
+                    <i className="fa-solid fa-comment"></i> {post.replies}
                 </a>
             </div>
             <div className="col-3 pt-2">
                 <a href="src/tuiter/tuits/tuit-stats/index#" className="text-decoration-none text-secondary">
-                    <i className="fa fa-retweet" aria-hidden="true"></i> {post.retweets}
+                    <i className="fa fa-retweet" aria-hidden="true"></i> {post.retuits}
                 </a>
             </div>
             <div className="col-3 pt-2">

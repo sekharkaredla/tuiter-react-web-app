@@ -14,7 +14,7 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                <img src="/images/nasa.png" width={60}/>
+                <img src="/images/relativity.png" width={60}/>
             </div>
             <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
@@ -26,7 +26,7 @@ const WhatsHappening = () => {
                             onClick={tuitClickHandler}>
                         Tuit
                     </button>
-                    <div className="text-primary fs-2">
+                    <div className="text-primary fs-4">
                         <i className="bi bi-card-image me-3"></i>
                         <i className="bi bi-filetype-gif me-3"></i>
                         <i className="bi bi-bar-chart me-3"></i>

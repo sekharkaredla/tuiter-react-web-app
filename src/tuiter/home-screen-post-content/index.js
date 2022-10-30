@@ -10,7 +10,7 @@ const HomeScreenPostContentComponent = ({post}) =>
                     <i className="fa-solid fa-ellipsis float-end pt-2 pb-1"></i>
                 </a>
             </div>
-            <div className="text-white">{post.title}</div>
+            <div className="text-white">{post.tuit}</div>
         </div>
     </>
 

@@ -25,7 +25,7 @@ const PostSummaryItem = (
                     </div>
                 </div>
                 <div className="col-3 col-xxl-2 align-self-center">
-                    <img src={`/images/${post.image}`} className="float-end rounded-2" height="80px"/>
+                    <img src={`${post.image}`} className="float-end rounded-2" height="80px"/>
                 </div>
             </div>
         </li>

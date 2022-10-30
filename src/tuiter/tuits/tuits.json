@@ -1,16 +1,17 @@
 [
   {
     "_id": 1,
-    "topic": "Web Development",
+    "topic": "Elon Musk",
     "time": "2h",
     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-    "image": "react.png",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
+    "image": "/images/elon_musk.png",
     "userName": "Elon Musk",
     "handle": "elonmusk",
-    "profileImage": "/images/elon_musk.png",
-    "comments": "4.2K",
-    "retweets": "3.5K",
-    "likes": "37.5K"
+    "replies": 4231,
+    "retuits": 3500,
+    "likes": 665,
+    "liked": true
   },
   {
     "_id": 2,
@@ -18,12 +19,13 @@
     "userName": "JavaScript",
     "time": "1 day",
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
-    "image": "js.png",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
+    "image": "/images/ny_post.png",
     "tweets": "123K",
-    "handle": "nypost",
-    "profileImage": "/images/ny_post.png",
-    "comments": "965",
-    "retweets": "2.4K",
-    "likes": "4K"
+    "handle": "jstuit",
+    "replies": 965,
+    "retuits": 2407,
+    "likes": 4962,
+    "liked": true
   }
 ]
