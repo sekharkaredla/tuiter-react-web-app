@@ -1,10 +1,14 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import "./index.css"
 
 const ProfileComponent = () => {
     const profileData = useSelector((state) => state.profileReducer);
+    const navigate = useNavigate();
+    const NavigateToEditScreen = () => {
+        navigate("/tuiter/edit-profile")
+    }
     return (<>
         <div className="row">
             <div className="col-1 mt-2">
@@ -21,7 +25,7 @@ const ProfileComponent = () => {
                  className="position-absolute start-0 ps-2 w-25 rounded-circle wd-profile-image"/>
         </div>
         <div className="float-end mt-2 me-2">
-            <button className="rounded-pill fg-color-white">Edit Profile</button>
+            <button className="rounded-pill fg-color-white" onClick={NavigateToEditScreen}>Edit Profile</button>
         </div>
         <div className="wd-div-after-profile-image ms-3">
             <div className="fw-bolder fs-5 mb-0 pb-0">
@@ -46,10 +50,12 @@ const ProfileComponent = () => {
             </div>
             <div className="row mt-2">
                 <div className="col-xxl-3 col-xl-3 col-5">
-                    <span className="fw-bold">{profileData.followingCount}</span> <span className="text-secondary">Following</span>
+                    <span className="fw-bold">{profileData.followingCount}</span> <span
+                    className="text-secondary">Following</span>
                 </div>
                 <div className="col-xxl-3 col-xl-3 col-5">
-                    <span className="fw-bold">{profileData.followersCount}</span> <span className="text-secondary">Followers</span>
+                    <span className="fw-bold">{profileData.followersCount}</span> <span
+                    className="text-secondary">Followers</span>
                 </div>
             </div>
         </div>
