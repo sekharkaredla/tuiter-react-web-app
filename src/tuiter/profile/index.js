@@ -10,7 +10,7 @@ const ProfileComponent = () => {
     const navigate = useNavigate();
     const {state} = useLocation();
     const NavigateToEditScreen = () => {
-        navigate("/tuiter/edit-profile")
+        navigate("/tuiter/edit-profile", {state: {profileData}})
     }
     if (state) {
         profileData = state.profileState;
