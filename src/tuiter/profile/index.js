@@ -1,20 +1,12 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./index.css"
 import ProfileBannerAndPic from "../profile-banner-and-pic";
-import {useLocation} from "react-router";
 
 const ProfileComponent = () => {
-    let profileData = useSelector((state) => state.profileReducer);
-    const navigate = useNavigate();
-    const {state} = useLocation();
-    const NavigateToEditScreen = () => {
-        navigate("/tuiter/edit-profile", {state: {profileData}})
-    }
-    if (state) {
-        profileData = state.profileState;
-    }
+    const profileData = useSelector((state) => state.profileReducer);
+
     return (<>
         <div className="row">
             <div className="col-1 mt-2">
@@ -26,9 +18,11 @@ const ProfileComponent = () => {
             </div>
         </div>
         <ProfileBannerAndPic profileData={profileData}/>
-        <div className="float-end mt-2 me-2">
-            <button className="btn btn-secondary rounded-pill fg-color-white" onClick={NavigateToEditScreen}>Edit Profile</button>
-        </div>
+        <Link to="/tuiter/edit-profile">
+            <div className="float-end mt-2 me-2">
+                <button className="btn btn-secondary rounded-pill fg-color-white">Edit Profile</button>
+            </div>
+        </Link>
         <div className="wd-div-after-profile-image ms-3">
             <div className="fw-bolder fs-5 mb-0 pb-0">
                 {profileData.firstName + " " + profileData.lastName}
