@@ -3,12 +3,17 @@ import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import "./index.css"
 import ProfileBannerAndPic from "../profile-banner-and-pic";
+import {useLocation} from "react-router";
 
 const ProfileComponent = () => {
-    const profileData = useSelector((state) => state.profileReducer);
+    let profileData = useSelector((state) => state.profileReducer);
     const navigate = useNavigate();
+    const {state} = useLocation();
     const NavigateToEditScreen = () => {
         navigate("/tuiter/edit-profile")
+    }
+    if (state) {
+        profileData = state.profileState;
     }
     return (<>
         <div className="row">
