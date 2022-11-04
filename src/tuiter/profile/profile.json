@@ -1,15 +1,15 @@
 {
-  "firstName": "Jose",
-  "lastName": "Annunziato",
-  "handle": "@jannunzi",
+  "firstName": "Iron",
+  "lastName": "Man",
+  "handle": "@ironman",
   "profilePicture": "elon_musk.png",
   "bannerPicture": "polyglot.png",
-  "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
+  "bio": "A man made up of iron, basically made up of Fe and Al. Interested in flying.",
   "website": "youtube.com/webdevtv",
   "location": "Boston, MA",
-  "dateOfBirth": "1968-06-01",
-  "dateJoined": "4/2009",
+  "dateOfBirth": "1999-06-01",
+  "dateJoined": "4/2010",
   "followingCount": 340,
-  "followersCount": 223,
+  "followersCount": 293,
   "numberOfTweets": 6114
 }
