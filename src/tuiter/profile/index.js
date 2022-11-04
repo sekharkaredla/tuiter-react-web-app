@@ -27,7 +27,7 @@ const ProfileComponent = () => {
         </div>
         <ProfileBannerAndPic profileData={profileData}/>
         <div className="float-end mt-2 me-2">
-            <button className="rounded-pill fg-color-white" onClick={NavigateToEditScreen}>Edit Profile</button>
+            <button className="btn btn-secondary rounded-pill fg-color-white" onClick={NavigateToEditScreen}>Edit Profile</button>
         </div>
         <div className="wd-div-after-profile-image ms-3">
             <div className="fw-bolder fs-5 mb-0 pb-0">

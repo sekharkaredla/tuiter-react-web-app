@@ -34,11 +34,11 @@ const EditProfile = () => {
         <>
             <div className="row">
                 <div className="col-xxl-10 col-xl-10 col-9">
-                <i className="bi bi-x-lg float-start text-white"
+                <i className="mt-1 bi bi-x-lg float-start text-white"
                    onClick={handleCancelEditing}></i>
                 </div>
                 <div className="col-xxl-2 col-xl-2 col-3">
-                <button className="rounded-pill float-end" onClick={handleSubmitButton}>Save</button>
+                <button className="btn btn-secondary btn-sm rounded-pill float-end" onClick={handleSubmitButton}>Save</button>
                 </div>
             </div>
             <ProfileBannerAndPic profileData={profileState}/>
