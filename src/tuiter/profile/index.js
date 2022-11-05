@@ -6,6 +6,14 @@ import ProfileBannerAndPic from "../profile-banner-and-pic";
 
 const ProfileComponent = () => {
     const profileData = useSelector((state) => state.profileReducer);
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    const getJoiningDateString = (joiningDateString) => {
+        const temporaryDateStringParts = joiningDateString.split("/")
+        const monthNumber = new Date(temporaryDateStringParts[0] + "/01/" + temporaryDateStringParts[1]).getMonth()
+        return monthNames[monthNumber] + " " + temporaryDateStringParts[1]
+    }
 
     return (<>
         <div className="row">
@@ -41,7 +49,7 @@ const ProfileComponent = () => {
                     <i className="fas fa-birthday-cake"></i> Born {profileData.dateOfBirth}
                 </div>
                 <div className="col-5">
-                    <i className="fa fa-calendar" aria-hidden="true"></i> Joined {profileData.dateJoined}
+                    <i className="fa fa-calendar" aria-hidden="true"></i> Joined {getJoiningDateString(profileData.dateJoined)}
                 </div>
             </div>
             <div className="row mt-2">

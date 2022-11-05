@@ -10,6 +10,7 @@ const EditProfile = () => {
     const [profileState, setProfileState] = useState(profileData);
     const initialData = {...profileData}
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleFieldChanges = (event) => {
         const fieldName = event.target.name;
@@ -21,8 +22,18 @@ const EditProfile = () => {
         setProfileState(newProfile);
     }
 
+    const performDateValidation = (newDateString) => {
+        const newDate = new Date(newDateString);
+        return newDate.toString() !== "Invalid Date";
+    }
+
     const handleSave = () => {
+        if (!performDateValidation(profileState.dateOfBirth)) {
+            alert("Invalid date, please enter a proper date of birth.")
+            return;
+        }
         dispatch(updateProfile(profileState));
+        navigate("/tuiter/profile")
     }
 
     const handleCancelEdit = () => {
@@ -38,9 +49,8 @@ const EditProfile = () => {
                     </Link>
                 </div>
                 <div className="col-xxl-2 col-xl-2 col-3">
-                    <Link to="/tuiter/profile">
-                        <button className="btn btn-secondary btn-sm rounded-pill float-end" onClick={handleSave}>Save</button>
-                    </Link>
+                    <button className="btn btn-secondary btn-sm rounded-pill float-end" onClick={handleSave}>Save
+                    </button>
                 </div>
             </div>
             <ProfileBannerAndPic profileData={profileState}/>
