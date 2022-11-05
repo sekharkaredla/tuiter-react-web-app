@@ -34,14 +34,14 @@ const ProfileComponent = () => {
                 {profileData.bio}
             </div>
             <div className="text-secondary row mt-2">
-                <div className="col-xxl-3 col-xl-3 col-4">
+                <div className="col-3">
                     <i className="fa fa-map-marker" aria-hidden="true"></i> {profileData.location}
                 </div>
-                <div className="col-xxl-3 col-xl-3 col-4">
-                    <i className="fas fa-birthday-cake"></i> {profileData.dateOfBirth}
+                <div className="col-4">
+                    <i className="fas fa-birthday-cake"></i> Born {profileData.dateOfBirth}
                 </div>
-                <div className="col-xxl-3 col-xl-3 col-4">
-                    <i className="fa fa-calendar" aria-hidden="true"></i> {profileData.dateJoined}
+                <div className="col-5">
+                    <i className="fa fa-calendar" aria-hidden="true"></i> Joined {profileData.dateJoined}
                 </div>
             </div>
             <div className="row mt-2">

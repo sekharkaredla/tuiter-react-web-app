@@ -50,6 +50,11 @@ const EditProfile = () => {
                 <label form="firstName">First Name</label>
             </div>
             <div className="form-floating mt-2">
+                <input type="text" className="form-control" id="lastName" name="lastName"
+                       value={profileState.lastName} onChange={handleFieldChanges}/>
+                <label form="lastName">Last Name</label>
+            </div>
+            <div className="form-floating mt-2">
                 <textarea className="form-control h-auto" id="bio" name="bio" value={profileState.bio}
                           onChange={handleFieldChanges}/>
                 <label form="bio">Bio</label>
@@ -65,9 +70,9 @@ const EditProfile = () => {
                 <label form="website">Web Site</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="date" className="form-control" id="dateOfBirth" name="dateOfBirth"
+                <input type="text" className="form-control" id="dateOfBirth" name="dateOfBirth"
                        value={profileState.dateOfBirth} onChange={handleFieldChanges}/>
-                <label form="firstName">Date Of Birth</label>
+                <label form="dateOfBirth">Date Of Birth (YYYY-MM-DD)</label>
             </div>
         </>
     );

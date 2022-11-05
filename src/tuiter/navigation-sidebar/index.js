@@ -53,11 +53,6 @@ const NavigationSidebar = () => {
                 <span className="d-none d-xl-block">&nbsp;&nbsp;Lists</span>
             </a>
             <a href="#"
-               className={`list-group-item list-group-item-action d-inline-flex ${active === 'user' ? 'active' : ''}`}>
-                <i className="fa-solid fa-user pt-1"></i>
-                <span className="d-none d-xl-block">&nbsp;&nbsp;User</span>
-            </a>
-            <a href="#"
                className={`list-group-item list-group-item-action d-inline-flex ${active === 'more' ? 'active' : ''}`}>
                 <i className="fa-solid fa-ellipsis pt-1"></i>
                 <span className="d-none d-xl-block">&nbsp;&nbsp;More</span>
