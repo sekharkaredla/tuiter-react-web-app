@@ -57,7 +57,6 @@ const NavigationSidebar = () => {
                 <i className="fa-solid fa-ellipsis pt-1"></i>
                 <span className="d-none d-xl-block">&nbsp;&nbsp;More</span>
             </a>
-            <button className="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
         </div>
     );
 };
