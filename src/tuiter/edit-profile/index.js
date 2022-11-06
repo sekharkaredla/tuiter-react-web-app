@@ -22,16 +22,7 @@ const EditProfile = () => {
         setProfileState(newProfile);
     }
 
-    const performDateValidation = (newDateString) => {
-        const newDate = new Date(newDateString);
-        return newDate.toString() !== "Invalid Date";
-    }
-
     const handleSave = () => {
-        if (!performDateValidation(profileState.dateOfBirth)) {
-            alert("Invalid date, please enter a proper date of birth.")
-            return;
-        }
         dispatch(updateProfile(profileState));
         navigate("/tuiter/profile")
     }
@@ -57,32 +48,32 @@ const EditProfile = () => {
             <div className="form-floating wd-top-margin-form">
                 <input type="text" className="form-control" id="firstName" name="firstName"
                        value={profileState.firstName} onChange={handleFieldChanges}/>
-                <label form="firstName">First Name</label>
+                <label htmlFor="firstName">First Name</label>
             </div>
             <div className="form-floating mt-2">
                 <input type="text" className="form-control" id="lastName" name="lastName"
                        value={profileState.lastName} onChange={handleFieldChanges}/>
-                <label form="lastName">Last Name</label>
+                <label htmlFor="lastName">Last Name</label>
             </div>
             <div className="form-floating mt-2">
                 <textarea className="form-control h-auto" id="bio" name="bio" value={profileState.bio}
                           onChange={handleFieldChanges}/>
-                <label form="bio">Bio</label>
+                <label htmlFor="bio">Bio</label>
             </div>
             <div className="form-floating mt-2">
                 <input type="text" className="form-control" id="location" name="location" value={profileState.location}
                        onChange={handleFieldChanges}/>
-                <label form="location">Location</label>
+                <label htmlFor="location">Location</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="text" className="form-control" id="website" name="website"
+                <input type="type" className="form-control" id="website" name="website"
                        value={profileState.website} onChange={handleFieldChanges}/>
-                <label form="website">Web Site</label>
+                <label htmlFor="website">Web Site</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="text" className="form-control" id="dateOfBirth" name="dateOfBirth"
+                <input type="date" className="form-control" id="dateOfBirth" name="dateOfBirth"
                        value={profileState.dateOfBirth} onChange={handleFieldChanges}/>
-                <label form="dateOfBirth">Date Of Birth (YYYY-MM-DD)</label>
+                <label htmlFor="dateOfBirth">Date Of Birth (YYYY-MM-DD)</label>
             </div>
         </>
     );
