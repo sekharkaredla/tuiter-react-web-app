@@ -15,8 +15,8 @@ const ProfileComponent = () => {
         return monthNames[monthNumber] + " " + temporaryDateStringParts[1]
     }
 
-    return (<>
-        <div className="row">
+    return (<div className="border border-1 border-secondary border-top-0 border-bottom-0">
+        <div className="row ms-2">
             <div className="col-1 mt-2">
                 <span><i className="fa-solid fa-arrow-left"></i></span>
             </div>
@@ -63,7 +63,7 @@ const ProfileComponent = () => {
                 </div>
             </div>
         </div>
-    </>);
+    </div>);
 }
 
 export default ProfileComponent;

@@ -46,32 +46,32 @@ const EditProfile = () => {
             </div>
             <ProfileBannerAndPic profileData={profileState}/>
             <div className="form-floating wd-top-margin-form">
-                <input type="text" className="form-control" id="firstName" name="firstName"
+                <input type="text" className="form-control text-bg-light" id="firstName" name="firstName"
                        value={profileState.firstName} onChange={handleFieldChanges}/>
                 <label htmlFor="firstName">First Name</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="text" className="form-control" id="lastName" name="lastName"
+                <input type="text" className="form-control text-bg-light" id="lastName" name="lastName"
                        value={profileState.lastName} onChange={handleFieldChanges}/>
                 <label htmlFor="lastName">Last Name</label>
             </div>
             <div className="form-floating mt-2">
-                <textarea className="form-control h-auto" id="bio" name="bio" value={profileState.bio}
+                <textarea className="form-control h-auto text-bg-light" id="bio" name="bio" value={profileState.bio}
                           onChange={handleFieldChanges}/>
                 <label htmlFor="bio">Bio</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="text" className="form-control" id="location" name="location" value={profileState.location}
+                <input type="text" className="form-control text-bg-light" id="location" name="location" value={profileState.location}
                        onChange={handleFieldChanges}/>
                 <label htmlFor="location">Location</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="type" className="form-control" id="website" name="website"
+                <input type="type" className="form-control text-bg-light" id="website" name="website"
                        value={profileState.website} onChange={handleFieldChanges}/>
                 <label htmlFor="website">Web Site</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="date" className="form-control" id="dateOfBirth" name="dateOfBirth"
+                <input type="date" className="form-control text-bg-light" id="dateOfBirth" name="dateOfBirth"
                        value={profileState.dateOfBirth} onChange={handleFieldChanges}/>
                 <label htmlFor="dateOfBirth">Date Of Birth (YYYY-MM-DD)</label>
             </div>
