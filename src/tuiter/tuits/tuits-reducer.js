@@ -3,9 +3,9 @@ import tuits from './tuits.json';
 
 
 const currentUser = {
-    "userName": "Relativity Space",
-    "handle": "@relativityspace",
-    "image": "/images/relativity.png",
+    "userName": "Iron Man",
+    "handle": "@ironman",
+    "image": "/images/elon_musk.png",
 };
 
 const templateTuit = {

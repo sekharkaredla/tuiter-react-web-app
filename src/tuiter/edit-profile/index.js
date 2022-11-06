@@ -32,12 +32,13 @@ const EditProfile = () => {
     }
 
     return (
-        <>
-            <div className="row">
-                <div className="col-xxl-10 col-xl-10 col-9">
+        <div className="border border-top-0 border-bottom-0 border-secondary">
+            <div className="row ms-2 me-2">
+                <div className="col-xxl-10 col-xl-10 col-9 mt-1">
                     <Link to="/tuiter/profile">
-                        <i className="mt-1 bi bi-x-lg float-start text-white" onClick={handleCancelEdit}></i>
+                        <i className="bi bi-x-lg float-start text-white" onClick={handleCancelEdit}></i>
                     </Link>
+                    <span className="fw-bolder">&nbsp;&nbsp;Edit Profile</span>
                 </div>
                 <div className="col-xxl-2 col-xl-2 col-3">
                     <button className="btn btn-secondary btn-sm rounded-pill float-end" onClick={handleSave}>Save
@@ -45,6 +46,7 @@ const EditProfile = () => {
                 </div>
             </div>
             <ProfileBannerAndPic profileData={profileState}/>
+            <div className="ms-2 me-2">
             <div className="form-floating wd-top-margin-form">
                 <input type="text" className="form-control text-bg-light" id="firstName" name="firstName"
                        value={profileState.firstName} onChange={handleFieldChanges}/>
@@ -75,7 +77,8 @@ const EditProfile = () => {
                        value={profileState.dateOfBirth} onChange={handleFieldChanges}/>
                 <label htmlFor="dateOfBirth">Date Of Birth</label>
             </div>
-        </>
+            </div>
+        </div>
     );
 }
 

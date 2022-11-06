@@ -32,6 +32,13 @@ const NavigationSidebar = () => {
                     <span className="d-none d-xl-block">&nbsp;&nbsp;Profile</span>
                 </a>
             </Link>
+            <Link to="/" className="text-decoration-none">
+                <a
+                    className={`list-group-item list-group-item-action d-inline-flex`}>
+                    <i className="fa-solid fa-flask pt-1"></i>
+                    <span className="d-none d-xl-block">&nbsp;&nbsp;Labs</span>
+                </a>
+            </Link>
             <a href="#"
                className={`list-group-item list-group-item-action d-inline-flex ${active === 'notifications' ? 'active' : ''}`}>
                 <i className="fa-solid fa-bell pt-1"></i>
