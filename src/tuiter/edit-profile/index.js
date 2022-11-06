@@ -66,7 +66,7 @@ const EditProfile = () => {
                 <label htmlFor="location">Location</label>
             </div>
             <div className="form-floating mt-2">
-                <input type="type" className="form-control text-bg-light" id="website" name="website"
+                <input type="text" className="form-control text-bg-light" id="website" name="website"
                        value={profileState.website} onChange={handleFieldChanges}/>
                 <label htmlFor="website">Web Site</label>
             </div>
