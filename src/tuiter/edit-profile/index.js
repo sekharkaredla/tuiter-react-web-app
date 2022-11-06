@@ -73,7 +73,7 @@ const EditProfile = () => {
             <div className="form-floating mt-2">
                 <input type="date" className="form-control text-bg-light" id="dateOfBirth" name="dateOfBirth"
                        value={profileState.dateOfBirth} onChange={handleFieldChanges}/>
-                <label htmlFor="dateOfBirth">Date Of Birth (YYYY-MM-DD)</label>
+                <label htmlFor="dateOfBirth">Date Of Birth</label>
             </div>
         </>
     );
