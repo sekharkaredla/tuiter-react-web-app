@@ -20,6 +20,7 @@ const WhatsHappening = () => {
         "replies": 0,
         "retuits": 0,
         "likes": 0,
+        "dislikes": 0,
     }
 
     const tuitClickHandler = () => {
