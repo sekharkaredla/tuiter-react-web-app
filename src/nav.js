@@ -5,7 +5,7 @@ function Nav() {
         <div>
             <Link to="/">Labs</Link> |
             <Link to="/a6">Assignment 6</Link> |
-            <Link to="/">Assignment 7</Link> |
+            <Link to="/">Assignment 8</Link> |
             <Link to="/tuiter">Tuiter</Link>
         </div>
     );
