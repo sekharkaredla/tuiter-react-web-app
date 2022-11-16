@@ -4,24 +4,22 @@ import {updateTuitThunk} from "../../../services/tuits-thunks";
 
 const TuitStats = ({post}) => {
     const dispatch = useDispatch();
-    const [localPostState, setLocalPostState] = useState(post);
 
     const updateLikeDislike = (like) => {
         let newPost
 
         if (like) {
             newPost = {
-                ...localPostState,
+                ...post,
                 liked: true,
-                likes: localPostState.likes + 1
+                likes: post.likes + 1
             }
         } else {
             newPost = {
-                ...localPostState,
-                dislikes: localPostState.dislikes + 1
+                ...post,
+                dislikes: post.dislikes + 1
             }
         }
-        setLocalPostState(newPost)
         dispatch(updateTuitThunk(newPost))
     }
 
@@ -29,26 +27,26 @@ const TuitStats = ({post}) => {
             <div className="row">
                 <div className="col-2 pt-2">
                     <a href="#" className="text-decoration-none text-secondary">
-                        <i className="fa-solid fa-comment"></i> {localPostState.replies}
+                        <i className="fa-solid fa-comment"></i> {post.replies}
                     </a>
                 </div>
                 <div className="col-2 pt-2">
                     <a href="#" className="text-decoration-none text-secondary">
-                        <i className="fa fa-retweet" aria-hidden="true"></i> {localPostState.retuits}
+                        <i className="fa fa-retweet" aria-hidden="true"></i> {post.retuits}
                     </a>
                 </div>
                 <div className="col-2 pt-2" onClick={() => {
                     updateLikeDislike(true);
                 }}>
                     <a className="text-decoration-none text-secondary">
-                        <i className={`fa-solid fa-heart ${localPostState.liked ? "text-danger" : ""}`}></i> {localPostState.likes}
+                        <i className={`fa-solid fa-heart ${post.liked ? "text-danger" : ""}`}></i> {post.likes}
                     </a>
                 </div>
                 <div className="col-2 pt-2" onClick={() => {
                     updateLikeDislike(false);
                 }}>
                     <a href="#" className="text-decoration-none text-secondary">
-                        <i className="fa-solid fa-thumbs-down"></i> {localPostState.dislikes}
+                        <i className="fa-solid fa-thumbs-down"></i> {post.dislikes}
                     </a>
                 </div>
                 <div className="col-2 pt-2">
