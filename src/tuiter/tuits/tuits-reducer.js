@@ -33,7 +33,7 @@ const tuitsSlice = createSlice({
         },
         [findTuitsThunk.fulfilled]: (state, {payload}) => {
             state.loading = false
-            state.tuits = payload
+            state.tuits = payload.reverse()
         },
         [findTuitsThunk.rejected]: (state) => {
             state.loading = false
